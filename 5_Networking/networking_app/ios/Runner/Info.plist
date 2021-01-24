@@ -41,5 +41,11 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<!-- !! Be warned that you will need to have an explanation for Apple's review team when enabling this, otherwise your app will get rejected on submission. -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+			<key>NSAllowsArbitraryLoads</key>
+			<true/>
+	</dict>
 </dict>
 </plist>

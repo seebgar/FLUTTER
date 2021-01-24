@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:networking_app/routes/_index/index.dart';
+import 'package:networking_app/routes/_index/sidebar.dart';
 import 'package:networking_app/routes/categorias/categorias.dart';
 import 'package:networking_app/routes/sistemas/sistemas.dart';
+import 'package:networking_app/widgets/login/login-page.dart';
 
 /// Route management class
 class RouteGenerator {
@@ -20,6 +22,14 @@ class RouteGenerator {
       case "/categorias":
         return MaterialPageRoute<Categorias>(
           builder: (_) => const Categorias(),
+        );
+      case "/login":
+        return MaterialPageRoute<LoginPage>(
+          builder: (_) => const LoginPage(),
+        );
+      case "/menu":
+        return MaterialPageRoute<SideBarMenu>(
+          builder: (_) => SideBarMenu(),
         );
       default:
         throw RouteException("Route not found");

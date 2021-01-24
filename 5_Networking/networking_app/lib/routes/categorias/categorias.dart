@@ -45,8 +45,9 @@ class _CategoriasState extends State<Categorias> {
           }
 
           if (snapshot.hasError) {
-            return const Center(
-              child: Text("error"),
+            final error = snapshot.error ?? "";
+            return Center(
+              child: Text("${error}"),
             );
           }
 

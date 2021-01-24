@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:networking_app/localization/localization_delegate.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:networking_app/routes.dart';
-// import 'package:networking_app/routes/categorias/categorias.dart';
-// import 'package:networking_app/routes/sistemas/sistemas.dart';
 
 void main() => runApp(MyApp());
 
